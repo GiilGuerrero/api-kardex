@@ -1,0 +1,25 @@
+{
+  "name": "api-kardex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiilGuerrero/api-kardex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiilGuerrero/api-kardex/issues"
+  },
+  "homepage": "https://github.com/GiilGuerrero/api-kardex#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "node": "^10.11.0"
+  }
+}
