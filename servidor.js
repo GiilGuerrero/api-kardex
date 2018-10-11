@@ -5,14 +5,18 @@ var app = express();
 
 app.use(express.son());
 app.get('/calificaciones', function(req,res){
+    console.log('Token recibido' + req.query.token);
     res.json({
-        mensaje: 'Bienvenido al API del kardex'
+        mensaje: 'Aquí estan las calificaciones'
     });
 });
 
 app.post('/login', function(req,res){
     var token = jwt.sign({
-        usuario: 'alumno'
+        usuario: 'alumno',
+        nombre: 'Gilberto',
+        claveUnica: 227505
+
     }, 'claveSecreta', {expiresIn: '60s'});
     console.log('Token generado: ' + token);
     res.json({
